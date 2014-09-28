@@ -1,3 +1,12 @@
+class FizzBuzz
+
+	def fizzbuzz(number)
+	return 'FizzBuzz' if is_divisible_by_fifteen?(number)
+	 return 'Buzz' if is_divisible_by_five?(number)
+	 return 'Fizz' if is_divisible_by_three?(number)
+	 number
+	end
+
 	def is_divisible_by_three?(number)
 		is_divisible_by?(number, 3)
 	end
@@ -14,3 +23,8 @@
 		number % divisor == 0
 	end
 
+end
+
+
+fizzbuzz = FizzBuzz.new
+(1..100).to_a.each {|n| `say #{fizzbuzz.fizzbuzz(n)}`}
