@@ -4,9 +4,8 @@ describe 'fizzbuzz' do
 
 	let(:fizzbuzz) { FizzBuzz.new }
 
-	
 	context "Knows that a number is divisible by" do
-		
+
 		it "3" do
 			expect(fizzbuzz.is_divisible_by_three?(3)).to eq(true)
 		end
@@ -19,7 +18,7 @@ describe 'fizzbuzz' do
 	end
 
 	context "knows that a number is not divisible by" do
-		
+
 		it "3" do
 			expect(fizzbuzz.is_divisible_by_three?(1)).to eq(false)
 		end
@@ -32,6 +31,7 @@ describe 'fizzbuzz' do
 	end
 
 	context "while playing the game it returns" do
+
 		it "the number" do
 			expect(fizzbuzz.fizzbuzz(1)).to eq(1)
 		end

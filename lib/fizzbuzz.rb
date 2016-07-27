@@ -25,6 +25,5 @@ class FizzBuzz
 
 end
 
-
 fizzbuzz = FizzBuzz.new
 (1..100).to_a.each {|n| `say #{fizzbuzz.fizzbuzz(n)}`}
